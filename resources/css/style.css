@@ -25,6 +25,10 @@ body {
     padding: 12px 0 12px 0.5em;
 }
 
+.container span {
+    padding-left: 1em;
+}
+
 .main-banner {
     background: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
     background-repeat: no-repeat;
@@ -74,7 +78,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     margin: 3em 0 0 0;
-    border: 0.2em solid orange;
+    /*border: 0.2em solid orange;*/
 }
 
 .product-image {
@@ -121,11 +125,56 @@ footer {
 
 
 @media only screen and (max-width: 1024px) {
+body {
+    font-size: 16px;
+    }
+nav ul {
+    display: none;
+    }
 .mobile-nav {
     display: block;
     text-align: center;
   }
+.product {
+    width: 47%;
+    }
+.product.glasses {
+    display: none;
+    }    
 }
 
+@media only screen and (max-width: 470px) {
+.headline {
+    width: 100%;
+    padding: 2rem;
+    }
+.headline h4 {
+    font-size: 0.77rem;
+    }  
+.headline h1 {
+    font-size: 1rem;
+    } 
+.products {
+    display: flex;
+    justify-content: center;
+}    
+.product {
+    width: 90%;
+    }
+.product.glasses, .watch {
+    display: none;
+    }  
+.business-info {
+    display: block;
+    } 
+.info {
+    width: 100%;
+
+    }    
+footer {
+    text-align: center;
+}       
+            
+}
 
 
